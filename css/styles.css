@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#header {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#warning {
+  background-color: #ffcb01;
+  text-align: center;
+  font-family: Raleway, serif;
+}
+
+#tiga {
+  padding-top: 2rem;
+  background-color: white;
+}
+
+form {
+  background-color: white;
+  padding-top: 3rem;
+}
+
+#note {
+  padding-top: 5rem;
+}
+
+footer {
+  background-color: white;
+}
+
+required:after {
+  content: "*";
+  color: red;
+}
+
+h5 {
+  padding-top: 1rem;
+}
+h6 {
+  padding-top: 1rem;
+  font-size: smaller;
+}
+
+p {
+  font-style: italic;
+  font-size: small;
+}
+
+.form-check-input {
+  border-color: #ffcb01;
+}
+
+.btn-primary {
+  background-color: #ffcb01;
+  border-color: #ffcb01;
+  color: black;
+  float: right;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  border-color: #ffcb01;
+  color: black;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 3px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffcb01;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffcb01;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(40px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 25px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
