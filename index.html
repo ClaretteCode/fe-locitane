@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Font -->
-    <link rel="stylesheet"
-    href="https://fonts.google.com/specimen/Raleway?query=raleway">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway?query=raleway">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -16,25 +16,26 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Test Frontend Developer</title>
-  </head>
-  <body>
+</head>
+
+<body>
 
     <!-- Header -->
 
-        <div class="row justify-content-md-center" id="header">
-          <div class="col col-lg-2">
-          </div>
-          <div class="col-md-auto">
+    <div class="row justify-content-md-center" id="header">
+        <div class="col col-lg-2">
+        </div>
+        <div class="col-md-auto">
             <img src="img/logo.png" alt="" width="200" height="auto">
-          </div>
-          <div class="col col-lg-2">
-          </div>
         </div>
-        <div class="header" id="warning">
-          <div class="col-md-auto text-center">
-              You don't have an account yet, please create new account
-          </div>
+        <div class="col col-lg-2">
         </div>
+    </div>
+    <div class="header" id="warning">
+        <div class="col-md-auto text-center">
+            You don't have an account yet, please create new account
+        </div>
+    </div>
 
     <!-- Header end -->
 
@@ -70,18 +71,18 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col">
-                      <h6>Last name <span style="color:#ff0000">*</span></h6>
-                      <input type="text" class="form-control" placeholder="Last name" required>
+                        <h6>Last name <span style="color:#ff0000">*</span></h6>
+                        <input type="text" class="form-control" placeholder="Last name" required>
                     </div>
                     <div class="col">
-                      <h6>First name <span style="color:#ff0000">*</span></h6>
-                      <input type="text" class="form-control" placeholder="First name" required>
+                        <h6>First name <span style="color:#ff0000">*</span></h6>
+                        <input type="text" class="form-control" placeholder="First name" required>
                     </div>
-                  </div>
-                  <div class="row">
+                </div>
+                <div class="row">
                     <h6>Mobile phone number <span style="color:#ff0000">*</span></h6>
                     <div class="col-1">
-                      <select class="form-select" aria-label="Default select example" required>
+                        <select class="form-select" aria-label="Default select example" required>
                         <option value="" disabled selected hidden></option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -90,16 +91,17 @@
                     </div>
                     <div class="col-5">
                         <div class="input-group mb-2">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text">+852</div>
-                          </div>
-                          <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Mobile phone number">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">+852</div>
+                            </div>
+                            <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Mobile phone number">
                         </div>
-                      </div>
-         
-              
-                    </div>      
+                    </div>
+
+
                 </div>
+            </div>
+
             <h5>Address</h5>
             <div class="form-group">
                 <label for="inputAddress">Address</label>
@@ -107,90 +109,90 @@
             </div>
             <div class="form-group">
                 <div class="row">
-                  <div class="col">
-                    <h6>Country/Location <span style="color:#ff0000">*</span></h6>
-                    <select class="form-select" id="country" required>
+                    <div class="col-lg-6 col-sm-12">
+                        <h6>Country/Location <span style="color:#ff0000">*</span></h6>
+                        <select class="form-select" id="country" required>
                         <option value="" disabled selected hidden>Select Country/Location</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                  </div>
-                  <div class="col">
-                    <h6>Province/District <span style="color:#ff0000">*</span></h6>
-                    <select class="form-select" aria-label="Default select example" required>
+                    </select>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <h6>Province/District <span style="color:#ff0000">*</span></h6>
+                        <select class="form-select" id="province" required>
                         <option value="" disabled selected hidden>Select Province/District</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                  </div>
+                    </select>
+                    </div>
                 </div>
             </div>
             <h5>Contacts</h5>
             <div class="form-group">
                 <div class="row">
-                  <div class="col-6">
-                    <h6>Email Address <span style="color:#ff0000">*</span></h6>
-                    <input type="text" class="form-control" placeholder="Email Address" required>
-                  </div>
-                  <div class="col-2">
-                    <h6>Date of birth <span style="color:#ff0000">*</span></h6>
-                    <input type="date" class="form-control" placeholder="DD" required>
-                  </div>
-                  <div class="col-2">
-                    <h6>Month <span style="color:#ff0000">*</span></h6>
-                    <input type="date" class="form-control" placeholder="MM" required>
-                  </div>
-                  <div class="col-2">
-                    <h6>Year</h6>
-                    <input type="date" class="form-control" placeholder="YYYY" required>
-                  </div>
-                  </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <h6>Email Address <span style="color:#ff0000">*</span></h6>
+                        <input type="text" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="col-lg-2 col-sm-12">
+                        <h6>Date of birth <span style="color:#ff0000">*</span></h6>
+                        <input type="number" id="day" name="day" min="1" max="31" class="form-control" placeholder="Date of birth" required>
+                    </div>
+                    <div class="col-lg-2 col-sm-12">
+                        <h6>Month <span style="color:#ff0000">*</span></h6>
+                        <form action="#">
+                            <select id="birthmonth" name="birthmonth" class="form-control">
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                          </select>
+                        </form>
+                    </div>
+                    <div class="col-lg-2 col-sm-12">
+                        <h6>Year</h6>
+                        <input type="number" id="year" name="year" min="1900" max="2099" class="form-control" placeholder="Birth year" required>
+                    </div>
                 </div>
             </div>
+    </div>
 
     <!-- Note -->
-            <div class="container" id="note">
-                <h4>Standard Privacy Note</h4>
-                <p>I warrant that the above information is true and correct. I understand that failure to answer all questions listed in this application form may prevent L'OCCITANE from processing my application; and L'OCCITANE may refuse to accept this application in the right of my individual circumstance.</p>
-                <p>I understand that the information collected will be used and retained by L'OCCITANE for the purpose of (i) my application of membership program of L'OCCITANE(iii) providing member-exclusive services; and (iii) the daily management operation and maintenance of membership account at L'OCCITANE.</p>
-                <p>I understand that it is necessary for me to provide L'OCCITANE with data in connection with the privilege. Failure to provide such data may result in L'OCCITANE stores or official website.</p>
-                <p>L'OCCITANE reserves the right to change any of the terms and conditions without prior notice. Changes will be posted on signage placed at L'OCCITANE stores or official website.</p>
-                <p>I understand that L'OCCITANE may use my personal information for the purpose of providing or promoting services/ products made available by L'OCCITANE. To choose whether to receive any promotional information sent by L'OCCITANE, please tick the box below.</p>
-                <p>I want to receive information or communication from L'OCCITANE.</p>
-                <div class="form-group">
-                    <div class="row">
-                    <div class="col-md-4">
-                        SMS & Mobile Call
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>    
+    <div class="container" id="note">
+        <h4>Standard Privacy Note</h4>
+        <p>I warrant that the above information is true and correct. I understand that failure to answer all questions listed in this application form may prevent L'OCCITANE from processing my application; and L'OCCITANE may refuse to accept this application
+            in the right of my individual circumstance.</p>
+        <p>I understand that the information collected will be used and retained by L'OCCITANE for the purpose of (i) my application of membership program of L'OCCITANE(iii) providing member-exclusive services; and (iii) the daily management operation and
+            maintenance of membership account at L'OCCITANE.</p>
+        <p>I understand that it is necessary for me to provide L'OCCITANE with data in connection with the privilege. Failure to provide such data may result in L'OCCITANE stores or official website.</p>
+        <p>L'OCCITANE reserves the right to change any of the terms and conditions without prior notice. Changes will be posted on signage placed at L'OCCITANE stores or official website.</p>
+        <p>I understand that L'OCCITANE may use my personal information for the purpose of providing or promoting services/ products made available by L'OCCITANE. To choose whether to receive any promotional information sent by L'OCCITANE, please tick the
+            box below.</p>
+        <p>I want to receive information or communication from L'OCCITANE.</p>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <label for="">SMS & Mobile Call</label>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="customSwitch1">
                     </div>
-                    <div class="tooltip">Hover over me
-                        <span class="tooltiptext">Tooltip text</span>
+                </div>
+                <div class="tooltip">Hover over me
+                    <span class="tooltiptext">Tooltip text</span>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <label for="">Emailing</label>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="customSwitch1">
                     </div>
-                    <div class="col-md-4">
-                    Emailing
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>    
+                </div>
+                <div class="col-md-4 d-flex">
+                    <label for="">Mailing</label>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="customSwitch1">
                     </div>
-                    <div class="col-md-4">
-                        Mailing
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>    
-                        </div>
-                </div> 
+                </div>
             </div>
-            </div>
+        </div>
+    </div>
     <!-- Note end-->
 
-    <!-- Check & Button -->            
+    <!-- Check & Button -->
 
     <div class="container" id="tiga">
         <div class="form-check">
@@ -198,55 +200,124 @@
             <p>I have read and understood the above terms and conditions and hereby agree that I will be bounded by these conditions and policies once I have submitted this application form</p>
         </div>
 
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#preview1">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#preview1">
                     CREATE CUSTOMER
                   </button>
-                  <!-- Modal -->
-                  <div class="modal fade" id="preview1" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Account Confirmation</h5>
-                          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <!-- Modal -->
+        <div class="modal fade" id="preview1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Account Confirmation</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
-                        </div>
-                        <div class="modal-body">
-                          <p>Below is your information filled from the form:</p>
-                          <div class="modal-content">
-                              <h6>Name:</h6>
-                              <h6>Mobile Phone Number:</h6>
-                              <h6>Address:</h6>
-                              <h6>Email Address:</h6>
-                              <h6>Date of Birth:</h6>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">SUBMIT</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                    <div class="modal-body">
+                        <p>Below is your information filled from the form:</p>
+                        <div class="modal-content">
+                            <h6>Name:</h6>
+                            <h6>Mobile Phone Number:</h6>
+                            <h6>Address:</h6>
+                            <h6>Email Address:</h6>
+                            <h6>Date of Birth:</h6>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-</form>
+    </form>
 
-</div>
+    </div>
 
     <!-- Form end-->
 
-<footer class="text-center">
-    <h6>v1.0.7</h6>
-</footer>
+    <footer class="text-center">
+        <h6>v1.0.7</h6>
+    </footer>
 
     <!-- My JS -->
-    <script type="text/javascript"  src="js/script.js"></script>
-
-
+    <script type="text/javascript" src="js/script.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <!-- JavaScript to Fetch and Populate Select Options -->
+    <script>
+        const countrySelect = document.getElementById('country');
+        const provinceSelect = document.getElementById('province');
+
+        // Function to populate the 'Country/Location' select
+        function populateCountrySelect() {
+            fetch('https://secure.geonames.org/countryInfoJSON?formatted=true&lang=en&username=mutiarajc')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Process the data here
+                    const countries = data.geonames;
+                    countries.forEach(country => {
+                        const option = document.createElement('option');
+                        option.value = country.countryName;
+                        option.text = country.countryName;
+                        option.setAttribute('data-geonameid', country.geonameId); // Add geonameId as an attribute
+                        countrySelect.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    // Handle errors here
+                    console.error('An error occurred while fetching countries:', error);
+                });
+        }
+
+        // Function to populate the 'Province/District' select based on the selected country
+        function populateProvinceSelect(geonameId) {
+            fetch(`https://secure.geonames.org/childrenJSON?geonameId=${geonameId}&username=mutiarajc`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Process the data here
+                    const provinces = data.geonames;
+                    provinceSelect.innerHTML = ''; // Clear existing options
+                    provinces.forEach(province => {
+                        const option = document.createElement('option');
+                        option.value = province.name;
+                        option.text = province.name;
+                        provinceSelect.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    // Handle errors here
+                    console.error('An error occurred while fetching provinces/districts:', error);
+                });
+        }
+
+        // Initial population of the 'Country/Location' select
+        populateCountrySelect();
+
+        // Event listener to populate the 'Province/District' select based on the selected country
+        countrySelect.addEventListener('change', () => {
+            const selectedIndex = countrySelect.selectedIndex;
+            if (selectedIndex >= 0) {
+                const selectedCountryGeonameId = countrySelect.options[selectedIndex].getAttribute('data-geonameid');
+                populateProvinceSelect(selectedCountryGeonameId);
+            }
+        });
+    </script>
+
 </body>
+
 </html>
